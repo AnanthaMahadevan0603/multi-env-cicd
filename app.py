@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     env = os.environ.get("APP_ENV", "unknown")
-    return f"Hello from the {env.upper()} environment - version 1"
+    return f"Hello from the {env.upper()} environment - version 2"
 
 @app.route("/health")
 def health():
